@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# check if the Python script exit
+if [ -z "$PYCODE" ]; then
+	echo "\$PYCODE not set"
+	exit 1
+fi
+
+#run the script
+python3 "$PYCODE"
