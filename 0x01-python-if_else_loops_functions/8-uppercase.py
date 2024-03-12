@@ -2,6 +2,9 @@
 def uppercase(str):
     for i in range(len(str)):
         ascii_ = ord(str[i])
-        ASCII_ = (ascii_ - 97) + 65
-        print("{}".format(chr(ASCII_)), end="")
+        CHAR = ascii_
+        if ascii_ in range(97, 123):
+            ASCII_ = (ascii_ - 97) + 65
+            CHAR = chr(ASCII_)
+        print("{}".format(CHAR), end="")
     print()
