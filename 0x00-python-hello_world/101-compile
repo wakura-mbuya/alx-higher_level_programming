@@ -1,4 +1,2 @@
 #!/bin/bash
-filename="${PYFILE%.*}"
-output_filename="$filename.pyc"
-python -m compileall "$PYFILE" -o "$output_filename" 2>/dev/null
+python3 -m compileall -b $PYFILE
