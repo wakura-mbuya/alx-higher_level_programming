@@ -8,7 +8,7 @@ if __name__ == "__main__":
     else:
         a = int(argv[1])
         b = int(argv[3])
-        op = arg[2]
+        op = argv[2]
 
         if op == "+":
             result = calc.add(a, b)
