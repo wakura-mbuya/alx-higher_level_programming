@@ -2,6 +2,6 @@
 if __name__ == "__main__":
     import hidden_4
     names = dir(hidden_4)
-    for i in names:
-        if "--" not in i:
-            print(i)
+    filtered_names = [name for name in names in not name.startswith("__")]
+    for name in filtered_names:
+        print(name)
