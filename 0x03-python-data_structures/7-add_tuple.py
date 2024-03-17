@@ -20,6 +20,6 @@ def add_tuple(tuple_a=(), tuple_b=()):
     if len(tuple_b) > 1:
         b2 = tuple_b[1]
     else:
-        b2 =0
+        b2 = 0
 
     return (a1 + b1, b2 + a2)
